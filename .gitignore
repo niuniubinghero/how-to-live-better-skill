@@ -2,6 +2,9 @@
 _local/
 dist/
 
+# 检索索引由 scripts/build_index.py 从正文生成，不入库
+data/items.json
+
 # WorkBuddy 项目数据
 .workbuddy/
 

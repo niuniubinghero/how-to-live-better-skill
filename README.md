@@ -24,8 +24,7 @@
 │   ├── 原书README.md        术语表、节-问题对照、作者写的「怎么读」
 │   ├── 章节速览.md          34 节速览表
 │   └── 极高性价比清单.md    114 条「极高」清单
-├── data/items.json          672 条结构化索引
-└── docs/                    《高性价比人生指南》阅读整理稿
+└── data/items.json          672 条结构化索引（本地生成，不入库）
 ```
 
 ## 安装
@@ -56,6 +55,12 @@ python scripts/install.py --project <仓库>   # 装成项目级，随 git 共�
 `~/.agents/skills/` 是跨客户端公约路径，除 Claude Code 外各家都读它。
 
 ## 用法
+
+**首次使用先生成索引**（仓库不带索引，约 2.9 MB，由正文随时重建）：
+
+```bash
+python scripts/build_index.py      # 生成 data/items.json 和两份速查，约 2 秒
+```
 
 装上以后直接问就行。要手动查：
 

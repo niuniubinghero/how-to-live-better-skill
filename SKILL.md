@@ -30,7 +30,15 @@ agent_created: true
 
 ## 第 1 步：检索
 
-技能目录下已内置全部正文（`references/book/` 34 个文件）和结构化索引（`data/items.json` 672 条），**不联网、不克隆仓库**。
+技能目录下已内置全部正文（`references/book/` 34 个文件），**不联网、不克隆仓库**。
+
+检索用的索引 `data/items.json` 不随仓库分发（约 2.9 MB，可由正文随时重建）。**首次使用先跑一次**（约 2 秒，纯标准库）：
+
+```bash
+python scripts/build_index.py
+```
+
+它同时会生成 `references/章节速览.md` 和 `references/极高性价比清单.md` 两份速查。
 
 检索入口（`SKILL` 指本技能目录）：
 
