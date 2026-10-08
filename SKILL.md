@@ -1,5 +1,5 @@
 ---
-name: how-to-live-better
+name: how-to-live-better-skill
 description: 用《高性价比人生指南》（github.com/eternity4719/HowToLiveBetter，正文 CC BY 4.0，本地已内置 34 节 672 条全文）回答具体的人生决策：该不该做、值不值、怎么选、划不划算、出事了先做什么、能领哪笔钱、这么干犯不犯法、哪些钱别花。先检索出相关条目再回答，按成本（钱/时间/毅力）、收益量级、证据等级 A/B/C 排序，每条注明出自第几节第几条；查不到就直说查不到，不补数字。触发词：该不该、值不值、要不要、划不划算、怎么选、帮我决定、犯法吗、能领什么、先做什么、性价比、避坑、智商税、被裁、押金、担保、工伤。
 license: CC BY 4.0（正文，来自 eternity4719/HowToLiveBetter）；脚本与整理稿同许可
 compatibility: 纯离线可用。跑 scripts/search.py 需要 Python 3（仅标准库，无第三方依赖）；不跑脚本时全部内容可直接以 Markdown 阅读。
